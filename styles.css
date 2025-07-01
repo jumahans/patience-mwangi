@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  zoom: 1;
+  overflow-x: hidden;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.nav-link {
+    @apply text-gray-700 hover:text-purple-600 transition-colors duration-300 font-medium;
+}
+
+.cta-button {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-poppins font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300;
+}
+
+.skill-card {
+    @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer;
+}
+
+.skill-icon {
+    @apply text-4xl mb-4 text-center;
+}
+
+.skill-bar {
+    @apply w-full bg-gray-200 rounded-full h-2 mt-3;
+}
+
+.skill-progress {
+    @apply h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-1000 ease-out;
+    width: 0%;
+}
+
+.project-card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden;
+}
+
+.project-image {
+    @apply w-full h-48 object-cover;
+}
+
+.tech-tag {
+    @apply bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.blog-card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden;
+}
+
+.blog-image {
+    @apply w-full h-48 object-cover;
+}
+
+.testimonial-card {
+    @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300;
+}
+
+.testimonial-avatar {
+    @apply w-12 h-12 rounded-full object-cover mr-4;
+}
+
+.social-icon {
+    @apply text-gray-400 hover:text-purple-400 transition-colors duration-300;
+}
+
+.contact-card {
+    @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 text-center block;
+    text-decoration: none;
+}
+
+.contact-card:hover {
+    text-decoration: none;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.scroll-animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
+.scroll-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
